@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UNITE.BusinessLayer
+namespace UNITE.Utility
 {
-    public class Class1
+    class Constants
     {
     }
 }

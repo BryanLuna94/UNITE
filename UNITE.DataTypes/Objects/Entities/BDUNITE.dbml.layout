@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.75" name="BDUNITE">
+  <DataContextMoniker Name="/BDUNITEDataContext" />
+  <nestedChildShapes>
+    <classShape Id="c615f68b-696f-4540-8f18-d6eb5a2960ea" absoluteBounds="0.75, 0.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/BDUNITEDataContext/Empresa" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b7cf4f16-aaac-4c6d-9265-83fd3618449a" absoluteBounds="0.765, 1.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ddff54e9-6cff-4cec-aadf-d7480d877036" absoluteBounds="3.75, 0.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/BDUNITEDataContext/Stock" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9d45519c-753e-4c80-808d-a0e0d1ccec6e" absoluteBounds="3.765, 1.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c7f1fa83-983b-4598-ae86-957c73a2840f" absoluteBounds="0.75, 3.75, 2, 2.9247054036458326">
+      <DataClassMoniker Name="/BDUNITEDataContext/MovimientoCab" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b44680af-f3f2-4233-9155-a5a5145f355b" absoluteBounds="0.765, 4.21, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="012623f5-9ab7-4f71-9c69-afc2eec69ecf" absoluteBounds="3.75, 3.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/BDUNITEDataContext/MovimientoDet" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d50d225a-22c2-47cb-8f4a-38504b95fd5b" absoluteBounds="3.765, 4.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ab0e4870-02c2-4f33-96cd-5d0394899495" absoluteBounds="6.75, 0.75, 2, 1.3862939453125003">
+      <DataClassMoniker Name="/BDUNITEDataContext/Plan" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e08eec1d-5a5c-492b-8b51-3f51cb1a0de3" absoluteBounds="6.765, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="543b34f5-fe30-4d9d-83cc-b503350452a8" absoluteBounds="6.75, 3.75, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/BDUNITEDataContext/Producto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c0b81840-f2c3-4d91-9972-a9ee46e4ffdd" absoluteBounds="6.765, 4.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="246a2714-e42a-4a45-a15f-55382535c5af" absoluteBounds="3.75, 6.75, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/BDUNITEDataContext/Usuario" />
+      <nestedChildShapes>
+        <elementListCompartment Id="27e02adc-7e5c-469a-9ca0-15d11ece33d7" absoluteBounds="3.765, 7.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
