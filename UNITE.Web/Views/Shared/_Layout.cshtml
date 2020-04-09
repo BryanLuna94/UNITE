@@ -1,43 +1,206 @@
 ﻿<!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
-</head>
-<body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Nombre de la aplicación", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
-        </footer>
-    </div>
+<html lang="en">
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" sizes="16x16" href="~/favicon.ico">
+    <title>UNITE - @ViewData["Title"]</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="~/wwwroot/AmpleAdmin/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Menu CSS -->
+    <link href="~/wwwroot/AmpleAdmin/plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet" />
+    <!--My admin Custom CSS -->
+    <link href="~/wwwroot/AmpleAdmin/plugins/bower_components/owl.carousel/owl.carousel.min.css" rel="stylesheet" />
+    <link href="~/wwwroot/AmpleAdmin/plugins/bower_components/owl.carousel/owl.theme.default.css" rel="stylesheet" />
+    <!-- toast CSS -->
+    <link href="~/wwwroot/AmpleAdmin/plugins/bower_components/toast-master/css/jquery.toast.css" rel="stylesheet" />
+    <!--Bootrstrap atetimepicker -->
+    @*<link href="~/wwwroot/AmpleAdmin/plugins/bower_components/bootrstrap-datetimepicker/bootstrap-datetimepicker.min.css" rel="stylesheet" />*@
+    <link href="~/wwwroot/css/jquery.datetimepicker.min.css" rel="stylesheet" />
+
+    <!--Jquery DataTable -->
+    <link href="~/wwwroot/js/JqueryDataTables/jquery.dataTables.min.css" rel="stylesheet" />
+    <!--sweetalert2 -->
+    <link href="~/wwwroot/AmpleAdmin/plugins/bower_components/sweetalert/sweetalert.css" rel="stylesheet" />
+    <!-- select CSS -->
+    @*<link href="~/wwwroot/css/vue-select.css" rel="stylesheet" />*@
+    <!-- multiselect CSS -->
+    <link href="~/wwwroot/css/vue-multiselect.min.css" rel="stylesheet" />
+    <!-- animation CSS -->
+    <link href="~/wwwroot/AmpleAdmin/css/animate.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="~/wwwroot/AmpleAdmin/css/style.css" rel="stylesheet" />
+    <!-- color CSS -->
+    <link href="~/wwwroot/AmpleAdmin/css/colors/default.css" id="theme" rel="stylesheet" />
+    <!-- Base Style CSS -->
+    <link href="~/wwwroot/css/base.css" rel="stylesheet" />
+    <link href="~/wwwroot/css/custom-style.css" rel="stylesheet" />
+
+    @RenderSection("styles", required: false)
+</head>
+
+<body class="fix-header">
+    <!-- ============================================================== -->
+    <!-- Preloader -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+        </svg>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Wrapper -->
+    <!-- ============================================================== -->
+    <div id="wrapper">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        @Html.Partial("_LayoutHeader")
+        <!-- End Top Navigation -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        @Html.Partial("_LayoutLeftSidebar")
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page Content -->
+        <!-- ============================================================== -->
+        <div id="page-wrapper">
+            <!-- .container-fluid -->
+            <div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- start Title -->
+                <!-- ============================================================== -->
+                @Html.Partial("_LayoutTitle")
+                <!-- ============================================================== -->
+                <!-- End Title -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Start RenderBody -->
+                <!-- ============================================================== -->
+                @RenderBody()
+                <!-- ============================================================== -->
+                <!-- End RenderBody -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Start right sidebar -->
+                <!-- ============================================================== -->
+                @Html.Partial("_LayoutRightSidebar")
+                <!-- ============================================================== -->
+                <!-- End right sidebar -->
+                <!-- ============================================================== -->
+            </div>
+            <!-- /.container-fluid -->
+            <!-- ============================================================== -->
+            <!-- Start Footer -->
+            <!-- ============================================================== -->
+            @Html.Partial("_LayoutFooter")
+            <!-- ============================================================== -->
+            <!-- End Footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page Content -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="~/wwwroot/AmpleAdmin/plugins/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="~/wwwroot/AmpleAdmin/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Menu Plugin JavaScript -->
+    <script src="~/wwwroot/AmpleAdmin/plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+    <!--slimscroll JavaScript -->
+    <script src="~/wwwroot/AmpleAdmin/js/jquery.slimscroll.js"></script>
+    <!--Wave Effects -->
+    <script src="~/wwwroot/AmpleAdmin/js/waves.js"></script>
+    <!-- jQuery for carousel
+    <script src="~/wwwroot/AmpleAdmin/plugins/bower_components/owl.carousel/owl.carousel.min.js"></script>
+    <script src="~/wwwroot/AmpleAdmin/plugins/bower_components/owl.carousel/owl.custom.js"></script> -->
+    <!-- Custom Theme JavaScript -->
+    <script src="~/wwwroot/AmpleAdmin/js/custom.js"></script>
+    <!-- Jquery toast -->
+    <script src="~/wwwroot/AmpleAdmin/plugins/bower_components/toast-master/js/jquery.toast.js"></script>
+    <!--Bootrstrap atetimepicker -->
+    @*<script src="~/wwwroot/AmpleAdmin/plugins/bower_components/bootrstrap-datetimepicker/moment.js"></script>
+        <script src="~/wwwroot/AmpleAdmin/plugins/bower_components/bootrstrap-datetimepicker/moment_2.10.6_locale_es.js"></script>
+        <script src="~/wwwroot/AmpleAdmin/plugins/bower_components/bootrstrap-datetimepicker/bootstrap-datetimepicker.min.js"></script>*@
+
+    <script src="~/wwwroot/js/DatetimePicker/jquery.datetimepicker.full.min.js"></script>
+    <!--Jquery DataTable -->
+    <script src="~/wwwroot/js/JqueryDataTables/jquery.dataTables.min.js"></script>
+    <!--sweetalert2 -->
+    <script src="~/wwwroot/AmpleAdmin/plugins/bower_components/sweetalert/sweetalert2.all.min.js"></script>
+    <!-- Get Base Url -->
+    <script type="text/javascript">
+        var getBaseUrl = {
+            //Obtener url relativa
+            Scheme: '@HttpContext.Current.Request.Url.Scheme' + "://",
+            Host: '@HttpContext.Current.Request.Url.Host' + ':',
+            Port: '@HttpContext.Current.Request.Url.Port',
+            Authority: '@HttpContext.Current.Request.Url.Authority',
+            ApplicationPath: '@HttpContext.Current.Request.ApplicationPath' + '/',
+            //Obtener url absoluta
+            obtenerUrlAbsoluta: function (urlRelativa) {
+                var baseUrl = this.Scheme + this.Host + this.Port + this.ApplicationPath.replace('//', '/') + urlRelativa;
+                return baseUrl;
+            }
+        };
+
+
+    </script>
+    <!--Vue js -->
+    <script src="~/wwwroot/js/Vue/handlebars.min.js"></script>
+    <!-- vue js -->
+    <script src="~/wwwroot/js/Vue/vue.js"></script>
+    <!-- Vuex -->
+    <script src="~/wwwroot/js/Vue/vuex.js"></script>
+    <!-- lodash js -->
+    <script src="~/wwwroot/js/Vue/lodash.js"></script>
+    <!-- axios js -->
+    <script src="~/wwwroot/js/Vue/axios.min.js"></script>
+    <!-- vee-validate js -->
+    <script src="~/wwwroot/js/Vue/vee-validate.min.js"></script>
+    <!-- lang js -->
+    <script src="~/wwwroot/js/Vue/lang.js"></script>
+    <!-- vue select js -->
+    <script src="~/wwwroot/js/Vue/vue-select.js"></script>
+    <!-- vue multiselect js -->
+    <script src="~/wwwroot/js/Vue/vue-multiselect.min.js"></script>
+    <!-- vue paginate js -->
+    <script src="~/wwwroot/js/Vue/vue-paginate.min.js"></script>
+    <!-- v mask js -->
+    <script src="~/wwwroot/js/Vue/v-mask.min.js"></script>
+    <!-- vue bootstrap datetimepicker -->
+    <script src="~/wwwroot/js/Vue/vue-bootstrap-datetimepicker.js"></script>
+    <!--Js base General -->
+    <script src="~/wwwroot/js/base.js"></script>
+    <!--Style Switcher -->
+    <script src="~/wwwroot/AmpleAdmin/js/colorTheme.js"></script>
+    <script src="~/wwwroot/js/Vue/moment.js"></script>
+    <script src="~/wwwroot/js/Vue/moment_2.10.6_locale_es.js"></script>
+    <script src="~/wwwroot/js/Utility/Constans.js"></script>
+    <script type="text/javascript" src="@Url.Content("~/wwwroot/js/Vue/views/Base.js")"></script>
+    <script src="~/wwwroot/js/Utility/Functions.js"></script>
+    <script type="text/javascript" src="@Url.Content("~/wwwroot/js/Vue/views/Layout.js")"></script>
+
+    <!--Morris JavaScript
+    <script src="~/wwwroot/AmpleAdmin/plugins/bower_components/raphael/raphael-min.js"></script>
+    <script src="~/wwwroot/AmpleAdmin/plugins/bower_components/morrisjs/morris.js"></script> -->
+    <!-- Guage chart
+    <script src="~/wwwroot/AmpleAdmin/plugins/bower_components/Minimal-Gauge-chart/js/cmGauge.js"></script>-->
+    <!-- Javascript for views -->
     @RenderSection("scripts", required: false)
 </body>
+
 </html>

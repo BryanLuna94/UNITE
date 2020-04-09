@@ -5,9 +5,9 @@ namespace UNITE.DataAccess.Connection
 {
     public static class GetConnection
     {
-        public static SqlConnection BDALMACEN()
+        public static SqlConnection UNITE()
         {
-            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["BDALMACEN"].ConnectionString);
+            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["UNITE"].ConnectionString);
             return con;
         }
     }

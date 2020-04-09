@@ -1,12 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
+using System.Globalization;
+using UNITE.DataAccess.Connection;
+using UNITE.DataTypes.Objects.Entities;
+using UNITE.DataTypes.Objects.Filters;
+using UNITE.DataTypes.Objects.Lists;
+using UNITE.Utility;
 
 namespace UNITE.DataAccess
 {
-    class ProductoData
+    public static class ProductoData
     {
+        
     }
 }

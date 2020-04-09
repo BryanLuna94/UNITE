@@ -1,0 +1,99 @@
+﻿<div class="navbar-default sidebar" role="navigation">
+    <div class="sidebar-nav slimscrollsidebar">
+                <div class="sidebar-head">
+                    <h3><span class="fa-fw open-close"><i class="ti-menu hidden-xs"></i><i class="ti-close visible-xs"></i></span> <span class="hide-menu"></span></h3> </div>
+                <ul class="nav" id="side-menu">
+                    <li class="user-pro">
+                        <a href="javascript:void(0)" data-toggle="collapse" data-target="#coperfil" aria-controls="coperfil" aria-expanded="false" class="waves-effect active">
+                            <img src="~/wwwroot/AmpleAdmin/plugins/images/user.png" alt="user-img" class="img-circle"> <span class="hide-menu"> Usuario <span class="fa arrow"></span></span>
+                        </a>
+                        <ul id="coperfil" class="nav nav-second-level collapse">
+                            <li><a href="@Url.Action("Index", "Perfil")"><i class="ti-user"></i> <span class="hide-menu">Mi perfil</span></a></li>
+                            <li><a href="@Url.Action("Logout", "Autenticacion")"><i class="fa fa-power-off"></i> <span class="hide-menu">Cerrar</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" data-toggle="collapse" data-target="#coiniciar" aria-controls="coiniciar" aria-expanded="false" class="waves-effect active"><i class="mdi mdi-av-timer fa-fw" data-icon="v"></i> <span class="hide-menu">Iniciar<span class="fa arrow"></span> <span class="label label-rouded label-inverse pull-right">3</span></span></a>
+                        <ul id="coiniciar" class="nav nav-second-level collapse">
+                            <li> <a href="@Url.Action("Index", "ImportarP")"><i class=" fa-fw">1</i><span class="hide-menu">Importar Programacion</span></a> </li>
+                            <li> <a href="@Url.Action("Index", "Generar")"><i class=" fa-fw">2</i><span class="hide-menu">Generar O.T.</span></a> </li>
+                            <li> <a href="@Url.Action("Index", "Ordenes")"><i class=" fa-fw">3</i><span class="hide-menu">Ordenes de Trabajo</span></a> </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" data-toggle="collapse" data-target="#coprocesos" aria-controls="coprocesos" aria-expanded="false" class="waves-effect active"><i class="mdi mdi-laptop fa-fw" data-icon="v"></i> <span class="hide-menu">Procesos<span class="fa arrow"></span> <span class="label label-rouded label-inverse pull-right">11</span></span></a>
+                        <ul id="coprocesos" class="nav nav-second-level collapse">
+                            <li> <a href="@Url.Action("Index", "Estado")" class="waves-effect"><i class="mdi mdi-steering fa-fw"></i> <span class="hide-menu">Estado de Unidades</span></a> </li>
+                            <li> <a href="@Url.Action("Index", "Unidades")"><i class="mdi mdi-gauge fa-fw"></i> <span class="hide-menu">Control de Unidades</span></a> </li>
+                            <li> <a href="@Url.Action("Index", "Fallas")"><i class="mdi mdi-comment-alert-outline fa-fw"></i> <span class="hide-menu">Reporte de Fallas</span></a> </li>
+                            <li> <a href="@Url.Action("Index", "FallasR")" class="waves-effect"><i class="mdi mdi-checkbox-marked-outline fa-fw"></i> <span class="hide-menu">Fallas en Ruta</span></a> </li>
+                            <li> <a href="@Url.Action("Index", "Requisicion")" class="waves-effect"><i class="mdi mdi-desktop-mac fa-fw"></i> <span class="hide-menu">Solicitud Requisiciones</span></a> </li>
+                            <li> <a href="@Url.Action("Index", "Calendario")" class="waves-effect"><i class="mdi mdi-calendar-clock fa-fw"></i> <span class="hide-menu">Programar Mant.</span></a></li>
+                            <li> <a href="@Url.Action("Index", "Limpieza")" class="waves-effect"><i class="mdi mdi-database fa-fw"></i> <span class="hide-menu">Limpieza de Unidades</span></a></li>
+                            <li> <a href="@Url.Action("Index", "Siniestros")" class="waves-effect"><i class="mdi mdi-clipboard-text fa-fw"></i> <span class="hide-menu">Informe de Siniestros</span></a></li>
+                            <li> <a href="@Url.Action("Index", "ImportarA")" class="waves-effect"><i class="mdi mdi-upload fa-fw"></i> <span class="hide-menu">Analisis de Aceite</span></a></li>
+                            <li> <a href="@Url.Action("Index", "Auditoria")" class="waves-effect"><i class="mdi mdi-sunglasses fa-fw"></i> <span class="hide-menu">Auditorìa</span></a></li>
+                            <li> <a href="@Url.Action("Index", "Historial")" class="waves-effect"><i class="mdi mdi-database fa-fw"></i> <span class="hide-menu">Historial de mant.</span></a></li>
+                            <li> <a href="@Url.Action("Index", "AuxilioMecanico")" class="waves-effect"><i class="mdi mdi-database fa-fw"></i> <span class="hide-menu">Auxilio Mecanico</span></a></li>
+                            <li> <a href="@Url.Action("Index", "Mtbf")" class="waves-effect"><i class="mdi mdi-database fa-fw"></i> <span class="hide-menu">Mtbf</span></a></li>
+                            <li> <a href="@Url.Action("Index", "OrdenMasiva")" class="waves-effect"><i class="mdi mdi-database fa-fw"></i> <span class="hide-menu">Ordenes Masivas</span></a></li>
+                            <li> <a href="@Url.Action("Index", "Informe")" class="waves-effect"><i class="mdi mdi-database fa-fw"></i> <span class="hide-menu">Informe</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" data-toggle="collapse" data-target="#comantenimientos" aria-controls="comantenimientos" aria-expanded="false" class="waves-effect active"><i class="mdi mdi-grid fa-fw" data-icon="v"></i> <span class="hide-menu"> Mantenimientos<span class="fa arrow"></span> <span class="label label-rouded label-inverse pull-right">6</span></span></a>
+                        <ul id="comantenimientos" class="nav nav-second-level collapse">
+                            <li> <a href="@Url.Action("Index", "Sistemas")"><i class=" fa-fw">SI</i><span class="hide-menu">Sistemas</span></a> </li>
+                            <li> <a href="@Url.Action("Index", "SubSistemas")"><i class=" fa-fw">SS</i><span class="hide-menu">Subsistemas</span></a> </li>
+                            <li> <a href="@Url.Action("Index", "ClaseM")"><i class=" fa-fw">CM</i><span class="hide-menu">Clases de Mantenimiento</span></a> </li>
+                            <li> <a href="@Url.Action("Index", "TipoM")"><i class=" fa-fw">TM</i><span class="hide-menu">Tipos de Mantenimiento</span></a> </li>
+                            <li>  <a href="@Url.Action("Index", "TareaM")"><i class=" fa-fw">TA</i><span class="hide-menu">Tareas</span></a> </li>
+                            <li> <a href="@Url.Action("Index", "TipoM")"><i class=" fa-fw">PR</i><span class="hide-menu">Preventivos</span></a> </li>
+                            <li> <a href="@Url.Action("Index", "TipoMP")"><i class=" fa-fw">MP</i><span class="hide-menu">M. Preventivo</span></a> </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" data-toggle="collapse" data-target="#coreportes" aria-controls="coreportes" aria-expanded="false" class="waves-effect active"><i class="mdi mdi-chart-bar fa-fw" data-icon="v"></i> <span class="hide-menu"> Reportes<span class="fa arrow"></span> <span class="label label-rouded label-inverse pull-right">5</span></span></a>
+                        <ul id="coreportes" class="nav nav-second-level collapse">
+                            <li> <a href="reporte1.html"><i class="mdi mdi-chart-bar fa-fw" data-icon="v"></i><span class="hide-menu">Reporte 1</span></a> </li>
+                            <li> <a href="reporte2.html"><i class="mdi mdi-chart-bar fa-fw" data-icon="v"></i><span class="hide-menu">Reporte 2</span></a> </li>
+                            <li> <a href="reporte3.html"><i class="mdi mdi-chart-bar fa-fw" data-icon="v"></i><span class="hide-menu">Reporte 3</span></a> </li>
+                            <li> <a href="reporte4.html"><i class="mdi mdi-chart-bar fa-fw" data-icon="v"></i><span class="hide-menu">Reporte 4</span></a> </li>
+                            <li> <a href="reporte5.html"><i class="mdi mdi-chart-bar fa-fw" data-icon="v"></i><span class="hide-menu">Reporte 5</span></a> </li>
+                        </ul>
+                    </li>
+                    @*<li class="devider"></li>*@
+                    @*<li>
+            <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-av-timer fa-fw" data-icon="v"></i> <span class="hide-menu"> Operaciones <span class="fa arrow"></span></span></a>
+            <ul class="nav nav-second-level">
+                <li> <a href="@Url.Action("Index", "EnviaOperaciones")"><i class="fa-fw">EO</i><span class="hide-menu">Envia Operaciones</span></a> </li>
+                <li> <a href="@Url.Action("Index", "ProgramacionViajes")"><i class="fa-fw">PV</i><span class="hide-menu">Programacíon de Viajes</span></a> </li>
+                <li> <a href="@Url.Action("Index", "AsigGastoLiquidos")"><i class="fa-fw">GL</i><span class="hide-menu">Asig. Gastos Líquidos</span></a> </li>
+                <li> <a href="@Url.Action("Index", "AsigGastoVarios")"><i class="fa-fw">GV</i><span class="hide-menu">Asig. Gastos Varios</span></a> </li>
+                <li> <a href="@Url.Action("Index", "LiqDocumentos")"><i class="fa-fw">LD</i><span class="hide-menu">Liq. Documentos</span></a> </li>
+                <li> <a href="@Url.Action("Index", "LiqGastoLiquido")"><i class="fa-fw">LL</i><span class="hide-menu">Liq. Gasto Líquido</span></a> </li>
+                <li> <a href="@Url.Action("Index", "LiqGastoVarios")"><i class="fa-fw">LV</i><span class="hide-menu">Liq. Gasto Varios</span></a> </li>
+            </ul>
+        </li>
+        <li class="devider"></li>
+        <li>
+            <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-cart-outline fa-fw" data-icon="v"></i> <span class="hide-menu"> Logística <span class="fa arrow"></span> </span></a>
+            <ul class="nav nav-second-level">
+            </ul>
+        </li>
+        <li class="devider"></li>
+        <li>
+            <a href="forms.html" class="waves-effect"><i class="mdi mdi-clipboard-text fa-fw"></i> <span class="hide-menu">Contabilidad<span class="fa arrow"></span></span></a>
+            <ul class="nav nav-second-level">
+            </ul>
+        </li>
+        <li class="devider"></li>
+        <li>
+            <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-chart-bar fa-fw"></i> <span class="hide-menu">Finanzas<span class="fa arrow"></span></span></a>
+            <ul class="nav nav-second-level">
+                <li> <a href="@Url.Action("Index", "FlujoCaja")"><i class="fa-fw">FC</i><span class="hide-menu">Flujo de Caja</span></a> </li>
+            </ul>
+        </li>*@
+                </ul>
+    </div>
+</div>

@@ -10,7 +10,7 @@ namespace UNITE.DataAccess
     {
         public static Usuario Login(string Acceso, string Clave)
         {
-            using (var con = GetConnection.BDALMACEN())
+            using (var con = GetConnection.UNITE())
             {
                 bool openConn = (con.State == ConnectionState.Open);
                 if (!openConn) { con.Open(); }

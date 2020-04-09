@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseData.cs" />
     <Compile Include="Connection\GetConnection.cs" />
     <Compile Include="MovimientoCabData.cs" />
     <Compile Include="MovimientoDetData.cs" />

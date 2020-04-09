@@ -33,6 +33,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,8 +42,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="BaseLogic.cs" />
+    <Compile Include="MovimientoLogic.cs" />
+    <Compile Include="UsuarioLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility\Constants.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UNITE.DataAccess\UNITE.DataAccess.csproj">
+      <Project>{cbd108e7-96b2-4b31-a628-0245f059af0a}</Project>
+      <Name>UNITE.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UNITE.DataTypes\UNITE.DataTypes.csproj">
+      <Project>{9ed7a304-2e49-496e-8a1b-0d07545e75ad}</Project>
+      <Name>UNITE.DataTypes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UNITE.Utility\UNITE.Utility.csproj">
+      <Project>{f1461838-7fdf-4848-a18e-4d6794bc2fa1}</Project>
+      <Name>UNITE.Utility</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

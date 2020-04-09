@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace UNITE.Utility
+﻿namespace UNITE.Utility
 {
-    class Constants
+    public static class Constants
     {
+        
     }
 }

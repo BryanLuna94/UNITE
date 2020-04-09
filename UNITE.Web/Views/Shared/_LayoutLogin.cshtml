@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" sizes="16x16" href="~/favicon.ico">
+    <title>ERP JELAF 20 - MANTENIMIENTO DE UNIDADES - @ViewData["Title"]</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="~/wwwroot/AmpleAdmin/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- toast CSS -->
+    <link href="~/wwwroot/AmpleAdmin/plugins/bower_components/toast-master/css/jquery.toast.css" rel="stylesheet" />
+    <!--Bootrstrap atetimepicker -->
+    <link href="~/wwwroot/AmpleAdmin/plugins/bower_components/bootrstrap-datetimepicker/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+    <!--sweetalert2 -->
+    <link href="~/wwwroot/AmpleAdmin/plugins/bower_components/sweetalert/sweetalert.css" rel="stylesheet" />
+    <!-- select CSS -->
+    @*<link href="~/wwwroot/css/vue-select.css" rel="stylesheet" />*@
+    <!-- multiselect CSS -->
+    @*<link href="~/wwwroot/css/vue-multiselect.min.css" rel="stylesheet" />*@
+    <!-- animation CSS -->
+    <link href="~/wwwroot/AmpleAdmin/css/animate.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="~/wwwroot/AmpleAdmin/css/style.css" rel="stylesheet" />
+    <!-- color CSS -->
+    <link href="~/wwwroot/AmpleAdmin/css/colors/default.css" id="theme" rel="stylesheet" />
+    <!-- Base Style CSS -->
+    <link href="~/wwwroot/css/base.css" rel="stylesheet" />
+    @RenderSection("styles", required: false)
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="cssload-speeding-wheel"></div>
+    </div>
+    <section id="wrapper" class="new-login-register">
+        <div class="lg-info-panel">
+            <div class="inner-panel">
+                <a href="javascript:void(0)" class="p-20 di"><img src="~/wwwroot/AmpleAdmin/plugins/images/perfil.png"></a>
+                <div class="lg-content">
+                    <h2> ERP JELAF @DateTime.Now.ToString("yyyy")</h2>
+                    <p class="text-muted">SISTEMA DE MANTENIMIENTO DE UNIDADES</p>
+                </div>
+            </div>
+        </div>
+        <div class="new-login-box">
+            <!-- ============================================================== -->
+            <!-- Start RenderBody -->
+            <!-- ============================================================== -->
+            @RenderBody()
+            <!-- ============================================================== -->
+            <!-- End RenderBody -->
+            <!-- ============================================================== -->
+        </div>
+    </section>
+    <!-- jQuery -->
+    <script src="~/wwwroot/AmpleAdmin/plugins/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="~/wwwroot/AmpleAdmin/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Menu Plugin JavaScript -->
+    <script src="~/wwwroot/AmpleAdmin/plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+    <!--slimscroll JavaScript -->
+    <script src="~/wwwroot/AmpleAdmin/js/jquery.slimscroll.js"></script>
+    <!--Wave Effects -->
+    <script src="~/wwwroot/AmpleAdmin/js/waves.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="~/wwwroot/AmpleAdmin/js/custom.js"></script>
+    <!-- Jquery toast -->
+    <script src="~/wwwroot/AmpleAdmin/plugins/bower_components/toast-master/js/jquery.toast.js"></script>
+    <!--Bootrstrap atetimepicker -->
+    <script src="~/wwwroot/AmpleAdmin/plugins/bower_components/bootrstrap-datetimepicker/moment.js"></script>
+    <script src="~/wwwroot/AmpleAdmin/plugins/bower_components/bootrstrap-datetimepicker/moment_2.10.6_locale_es.js"></script>
+    <script src="~/wwwroot/AmpleAdmin/plugins/bower_components/bootrstrap-datetimepicker/bootstrap-datetimepicker.min.js"></script>
+    <!--Jquery DataTable -->
+    <script src="~/wwwroot/js/JqueryDataTables/jquery.dataTables.min.js"></script>
+    <!--sweetalert2 -->
+    <script src="~/wwwroot/AmpleAdmin/plugins/bower_components/sweetalert/sweetalert2.all.min.js"></script>
+    <!-- Get Base Url -->
+    <script type="text/javascript">
+        var getBaseUrl = {
+            //Obtener url relativa
+            Scheme: '@HttpContext.Current.Request.Url.Scheme' + "://",
+            Host: '@HttpContext.Current.Request.Url.Host' + ':',
+            Port: '@HttpContext.Current.Request.Url.Port',
+            Authority: '@HttpContext.Current.Request.Url.Authority',
+            ApplicationPath: '@HttpContext.Current.Request.ApplicationPath' + '/',
+            //Obtener url absoluta
+            obtenerUrlAbsoluta: function (urlRelativa) {
+                var baseUrl = this.Scheme + this.Host + this.Port + this.ApplicationPath.replace('//', '/') + urlRelativa;
+                return baseUrl;
+            }
+        };
+    </script>
+    <!--Vue js -->
+    <script src="~/wwwroot/js/Vue/handlebars.min.js"></script>
+    <!-- vue js -->
+    <script src="~/wwwroot/js/Vue/vue.js"></script>
+    <!-- Vuex -->
+    <script src="~/wwwroot/js/Vue/vuex.js"></script>
+    <!-- lodash js -->
+    <script src="~/wwwroot/js/Vue/lodash.js"></script>
+    <!-- axios js -->
+    <script src="~/wwwroot/js/Vue/axios.min.js"></script>
+    <!-- vee-validate js -->
+    <script src="~/wwwroot/js/Vue/vee-validate.min.js"></script>
+    <!-- lang js -->
+    <script src="~/wwwroot/js/Vue/lang.js"></script>
+    <!-- vue select js -->
+    <script src="~/wwwroot/js/Vue/vue-select.js"></script>
+    <!-- vue multiselect js -->
+    <script src="~/wwwroot/js/Vue/vue-multiselect.min.js"></script>
+    <!-- vue paginate js -->
+    <script src="~/wwwroot/js/Vue/vue-paginate.min.js"></script>
+    <!-- v mask js -->
+    <script src="~/wwwroot/js/Vue/v-mask.min.js"></script>
+    <!-- vue bootstrap datetimepicker -->
+    <script src="~/wwwroot/js/Vue/vue-bootstrap-datetimepicker.js"></script>
+    <!--Js base General -->
+    <script src="~/wwwroot/js/base.js"></script>
+    <!--Style Switcher -->
+    <script src="~/wwwroot/AmpleAdmin/js/colorTheme.js"></script>
+    <script src="~/wwwroot/js/Utility/Constans.js"></script>
+    <script src="~/wwwroot/js/Utility/Functions.js"></script>
+    <!-- Javascript for views -->
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -34,6 +34,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,7 +48,19 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BDUNITE.dbml</DependentUpon>
     </Compile>
+    <Compile Include="Objects\Filters\MovimientoCabFilter.cs" />
+    <Compile Include="Objects\Filters\ProductoFilter.cs" />
+    <Compile Include="Objects\Lists\BaseList.cs" />
+    <Compile Include="Objects\Lists\MovimientoCabList.cs" />
+    <Compile Include="Objects\Lists\MovimientoDetList.cs" />
     <Compile Include="Objects\Others\Response.cs" />
+    <Compile Include="Peticiones\Requests\LoginRequest.cs" />
+    <Compile Include="Peticiones\Requests\MovimientoRequest.cs" />
+    <Compile Include="Peticiones\Requests\ProductoRequest.cs" />
+    <Compile Include="Peticiones\Requests\VentaRapidaRequest.cs" />
+    <Compile Include="Peticiones\Responses\BaseResponse.cs" />
+    <Compile Include="Peticiones\Responses\LoginResponse.cs" />
+    <Compile Include="Peticiones\Responses\MovimientoResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -73,11 +86,6 @@
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Objects\Filters\" />
-    <Folder Include="Objects\Lists\" />
-    <Folder Include="Peticiones\Requests\" />
-    <Folder Include="Peticiones\Responses\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

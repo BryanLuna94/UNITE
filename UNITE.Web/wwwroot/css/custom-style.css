@@ -1,0 +1,873 @@
+﻿/* Personalización de keyframes */
+/*----------------------------*/
+/*
+@-webkit-keyframes moving-gradient {
+    0% {
+        background-position: -250px 0;
+    }
+
+    100% {
+        background-position: 250px 0;
+    }
+}
+
+@keyframes shadow-pulse {
+    0% {
+        box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+    }
+
+    100% {
+        box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
+    }
+}
+    */
+/*----------------------------*/
+
+
+/* Personalización de ausencia de overflow-y en Login */
+/*----------------------------*/
+/*
+.new-login-register {
+    position: absolute;
+    align-items: center;
+}
+
+    .new-login-register .new-login-box {
+        min-height: 650px;
+    }
+    */
+/*----------------------------*/
+
+
+/* Personalización del footer */
+/*----------------------------*/
+/*
+.footer {
+    padding: 10px 30px;
+    font-size: 11px;
+}
+
+#page-wrapper {
+    padding: 0 0 40px;
+}
+
+.label-danger {
+    background-color: #fd4e4e;
+}
+
+.label-primary, .label-purple {
+    background-color: #6074ff;
+}
+
+.label-default {
+    background-color: #949494;
+}
+    */
+/*----------------------------*/
+
+
+/* Personalización del Toast */
+/*----------------------------*/
+.jq-icon-success {
+    background-color: #1EA746;
+}
+
+.jq-icon-warning {
+    background-color: #f69f22;
+}
+/*----------------------------*/
+
+
+/* Personalización del Label en tabla */
+/*----------------------------*/
+.label-success {
+    background-color: #5CB85C;
+}
+
+.label-warning {
+    background-color: #EA8A00;
+}
+/*----------------------------*/
+
+
+/* Reducir tamaño Fixed Header principal */
+/*----------------------------*/
+.navbar-header {
+    height: 60px;
+}
+
+.bg-title {
+    padding: 4px 10px 2px;
+}
+/*----------------------------*/
+
+
+/* Logo Empresa en fixed header */
+/*----------------------------*/
+.top-left-part {
+    width: 270px !important;
+}
+
+@media (max-width: 767px) {
+    .top-left-part {
+        width: 60px !important;
+    }
+}
+/*----------------------------*/
+
+
+/* Personalización de la Letra */
+/*----------------------------*/
+/*
+body {
+    font-size: 12px !important;
+}
+
+.form-control {
+    font-size: 12px !important;
+    font-weight: 400;
+}
+
+.btn {
+    font-size: 12px;
+}
+
+.font-bold {
+    font-weight: 700 !important;
+}
+    */
+/*----------------------------*/
+
+
+/* Todas las Columnas, ajustando padding */
+/*----------------------------*/
+/*
+[class^="col-"], [class*=" col-"] {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.input-group[class*=col-] {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+    */
+/*----------------------------*/
+
+
+/* Personalizaicón de los Modals */
+/*----------------------------*/
+/*
+@media (min-width: 768px) {
+    .modal-dialog-centered {
+        top: 50%;
+        transform: translateY(-60%) !important;
+    }
+}
+
+.modal-footer {
+    padding: 9px;
+}
+
+.modal-title {
+    display: unset;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    .modal-sm {
+        width: 340px;
+    }
+}
+
+@media (min-width: 992px) {
+    .modal-lg {
+        width: 90%
+    }
+}
+
+.modal-drag {
+    cursor: all-scroll;
+}
+
+@media all and (max-width: 768px) {
+    .btn-block-custom {
+        width: 100%;
+        display: block;
+    }
+}
+
+.has-bugs {
+    transition: box-shadow 1s !important;
+    box-shadow: 0 12px 30px -2px rgba(255,0,0,.6) !important;
+}
+    */
+/*----------------------------*/
+
+
+/* Personalización de las Tablas */
+/*----------------------------*/
+/*
+.custom-table {
+    margin-bottom: 0;
+}
+
+    .custom-table > thead > tr > th {
+        background-color: #4C5667;
+        color: white;
+        padding: 8px 5px;
+        text-transform: uppercase;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .custom-table > tbody > tr > td {
+        padding: 4px 6px;
+        vertical-align: middle;
+        font-size: 11px;
+    }
+
+.table-wrapper {
+    max-height: 300px;
+    overflow-y: scroll;
+    border: 1px solid #E4E7EA;
+}
+
+.floatThead-container {
+    z-index: 99 !important;
+}
+
+.table-hover tbody tr:focus-within {
+    color: black;
+    background: linear-gradient(to right, #eee 20%, #ddd 50%, #eee 80%);
+    background-size: 500px 100px;
+    animation-name: moving-gradient;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.btn-in-table {
+    height: 39px;
+}
+    */
+/*----------------------------*/
+
+
+/* Personalización de los Paneles */
+/*----------------------------*/
+/*
+.panel {
+    margin-bottom: 0px;
+}
+
+    .panel .panel-action {
+        margin-left: auto;
+    }
+
+    .panel .panel-body {
+        padding: 15px 2px 5px 2px;
+    }
+
+    .panel .panel-heading {
+        padding: 9px;
+        display: flex;
+        min-height: 50px;
+    }
+
+        .panel .panel-heading a i {
+            font-size: 12px;
+            margin-left: 0px;
+        }
+
+.btn-pnl-head-right {
+    margin-left: auto;
+}
+
+.dismiss-pnl-head {
+    color: #313131;
+    opacity: .5
+}
+
+    .dismiss-pnl-head:hover {
+        opacity: 1;
+        color: #313131
+    }
+
+.label-panelh {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.container-panelh {
+    padding: 10px 5px !important;
+}
+
+.container-panelb {
+    padding: 0 7px 5px !important;
+}
+    */
+/*----------------------------*/
+
+
+/* Personalización de los Botones */
+/*----------------------------*/
+/*
+.btn-separate {
+    margin-right: 9px;
+}
+
+.btn-circle {
+    padding: 1px 0;
+}
+
+.btn-pinterest,
+.btn-pinterest.disabled {
+    font-weight: 500;
+}
+
+    .btn-pinterest:hover {
+        color: #fff !important;
+        background-color: #cb2027 !important;
+        opacity: 0.8;
+    }
+
+.btn-success,
+.btn-success.disabled {
+    background-color: #1EA746;
+    border: 1px solid #22985d;
+}
+
+    .btn-success:hover {
+        background-color: #41a95f;
+        border-color: #3e9c6d;
+    }
+
+    .btn-success:focus {
+        background-color: #41a95f;
+        border-color: #3e9c6d;
+    }
+
+    .btn-success.btn-outline {
+        color: #1EA746;
+        background-color: transparent;
+    }
+
+        .btn-success.btn-outline:hover {
+            background: #41a95f;
+            color: #fff;
+        }
+
+.btn-warning,
+.btn-warning.disabled {
+    background: #faa020;
+    border: 1px solid #f89f1f;
+}
+
+    .btn-warning:hover {
+        background-color: #e89d31;
+        border-color: #e69e38;
+    }
+
+    .btn-warning:focus {
+        background-color: #e89d31;
+        border-color: #e69e38;
+    }
+
+    .btn-warning.btn-outline {
+        color: #eea02f;
+    }
+
+        .btn-warning.btn-outline:hover {
+            background: #eea02f;
+        }
+
+.btn-primary,
+.btn-primary.disabled {
+    background: #707CD2 !important;
+    border: 1px solid #707CD2 !important;
+}
+
+.btn-inverse:hover {
+    background-color: #4c5667;
+    border: 1px solid #4c5667;
+    color: #fff;
+    opacity: 0.8;
+}
+
+.btn-focus:focus {
+    animation-name: shadow-pulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+    */
+/*----------------------------*/
+
+
+/* Personalización de los Forms */
+/*----------------------------*/
+/*
+.white-box {
+    padding: 0px;
+    margin-bottom: 25px;
+}
+
+.form-material .form-control {
+    padding-left: 8px;
+}
+
+.form-horizontal .form-group {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+@media (max-width: 991px) {
+    .clabel-custom {
+        text-align: left !important;
+    }
+}
+
+.separate-in-form {
+    padding-bottom: 5px !important;
+}
+
+@media (max-width: 767px) {
+    .separate-in-form {
+        padding-bottom: 9px !important;
+    }
+}
+
+.input-group-addon {
+    cursor: pointer;
+}
+    */
+/*----------------------------*/
+
+
+/* Personalización de Sweet Alert 2 */
+/*----------------------------*/
+.swal2-popup .swal2-content {
+    font-size: 14px !important;
+}
+
+.swal2-popup .swal2-title {
+    font-size: 1.5em !important;
+}
+
+body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
+    padding-right: 0 !important;
+}
+
+.swal2-popup .swal2-input {
+    height: 2em !important;
+}
+/*----------------------------*/
+
+
+/* Personalización de Vue Paginate */
+/*----------------------------*/
+.pagination {
+    margin: 0;
+}
+
+.paginate-padding {
+    padding-bottom: 0;
+}
+
+    .paginate-padding > ul {
+        padding-left: 0;
+        margin: 0;
+    }
+
+.pagination > li > a {
+    padding: 6px 10px;
+}
+
+ul.pagination li a {
+    transition: background-color .3s;
+}
+
+.pagination > .active > a {
+    background-color: #4C5667;
+    border-color: #dddddd;
+    color: white;
+}
+
+    .pagination > .active > a:hover {
+        background-color: #4c5667;
+        border-color: #6c7c96;
+        opacity: 0.8;
+    }
+/*----------------------------*/
+
+
+/* Personalización de Font Awesome */
+/*----------------------------*/
+.fa-spin {
+    margin-right: 6px;
+}
+/*----------------------------*/
+
+
+/* Personalización de Vue Select */
+/*----------------------------*/
+/*.v-select-form .vs__search,
+.v-select-form .vs__dropdown-toggle,
+.v-select-form .vs__dropdown-menu {
+    background: white;
+    color: inherit;
+    z-index: 101;
+    font-weight: 400;
+}
+
+.v-select-form .vs__search{
+    z-index: 100;
+}
+
+.v-select-form .vs__open-indicator,
+.v-select-form .vs__clear {
+    background: white;
+}
+
+.v-select-form .vs__dropdown-menu {
+    color: inherit;
+    display: inline-table !important;
+    max-height: 250px !important;
+    z-index: 101;
+}
+
+.v-select-form .vs__clear:hover,
+.v-select-form .vs__open-indicator:hover {
+    transition: all 500ms linear 0s !important;
+    fill: #5897FB;
+    cursor: pointer;
+}
+
+.v-select-form .vs__open-indicator:hover {
+    color: #5897FB;
+}
+
+.v-select-form .vs__clear:hover {
+    color: red;
+}
+
+.v-select-form .vs__dropdown-toggle,
+.v-select-form .vs__selected-options,
+.v-select-form .vs__actions {
+    transition: all 300ms linear 0s !important;
+}
+
+.v-select-form .vs__selected-options {
+    display: contents;
+}
+
+.v-select-form .vs__dropdown-toggle {
+    padding-top: 2px;
+    border: 1px solid #E4E7EA;
+}
+
+.v-select-form.vs--open .vs__dropdown-toggle {
+    border: 1px solid black !important;
+}
+
+.v-select-form .vs__spinner,
+.v-select-form .vs__spinner:after {
+    width: 3.6em;
+    height: 3.6em;
+}
+
+.v-select-form.vs--disabled .vs__search,
+.v-select-form.vs--disabled .vs__dropdown-toggle,
+.v-select-form.vs--disabled .vs__dropdown-menu,
+.v-select-form.vs--disabled .vs__open-indicator,
+.v-select-form.vs--disabled .vs__clear {
+    transition: all 500ms linear 0s !important;
+    background: #eee;
+}*/
+/*----------------------------*/
+/* Clases de conveniencia */
+/*----------------------------*/
+/*
+.bordergray {
+    border: 1px solid;
+    border-color: #DDDDDD;
+    padding: 10px 5px 5px 5px;
+    background-color: #F7FAFC
+}
+
+.help-block-error {
+    color: #F93536;
+    display: inline-block;
+}
+
+.group-strench {
+    margin: -5px 0 -5px -5px;
+    padding: 5px;
+}
+
+.fa-customx {
+    font-size: 1.5em;
+}
+
+.fa-color-true {
+    color: greenyellow;
+}
+
+.fa-color-false {
+    color: red;
+}
+
+.v-error {
+    border-bottom: 1px solid #FF7676;
+    border-color: #FF7676;
+    box-shadow: none !important;
+}
+
+    .v-error:focus {
+        border-bottom: 1px solid #FF7676;
+        border-color: #FF7676;
+        box-shadow: none !important;
+    }
+
+.error-comp {
+    border: 1px solid #FF7676 !important;
+    border-radius: 4px;
+    box-shadow: none !important;
+}
+
+.highlight {
+    background-color: #FDF9CD;
+}
+
+.df {
+    display: flex !important;
+}
+
+.d-if {
+    display: inline-flex !important;
+}
+
+.d-tc {
+    display: table-cell !important;
+}
+
+.bgc-saldo {
+    background-color: #FDF9CD !important;
+    background-image: linear-gradient(-90deg, #FBF9E5 20%, #FDF9CD);
+    font-weight: 500;
+}
+
+.bgc-saldo-resumen {
+    background-color: #FAD4A8 !important;
+    background-image: linear-gradient(-90deg, #F5DBBD 20%, #FAD4A8);
+    font-weight: 500;
+}
+
+.field-icon {
+    float: right;
+    margin-left: -8px;
+    position: relative;
+    color: #BF96F5;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+    .field-icon:hover {
+        opacity: 0.5;
+        transform: scale(1.1);
+    }
+
+.cur-d {
+    cursor: default !important;
+}
+
+.mini-title {
+    position: absolute;
+    top: -10px;
+    font-size: 9px;
+    font-weight: 400;
+}
+
+.custom-logo-b {
+    min-width: 75px;
+}
+
+.span-calendar {
+    transition: all 500ms linear 0s !important;
+}
+
+    .span-calendar:hover {
+        color: #5897FB
+    }
+    */
+/*----------------------------*/
+
+/* Gerardo 'Proyecto Minerales' */
+#ulMenuClickDerecho {
+    background: #FAFAFA;
+    border: 1px solid #BDBDBD;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+    cursor: pointer;
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 125px;
+    z-index: 999999;
+}
+
+    #ulMenuClickDerecho li {
+        border-bottom: 1px solid #E0E0E0;
+        margin: 0;
+        padding: 5px 15px;
+    }
+
+        #ulMenuClickDerecho li:last-child {
+            border-bottom: none;
+        }
+
+        #ulMenuClickDerecho li:hover {
+            background: #03A9F4;
+            color: #FAFAFA;
+        }
+
+/*
+.span-calendar {
+    float: left;
+    padding: 6px 3px !important;
+    width: 20%;
+}
+
+.dp {
+    float: left;
+    width: 80%;
+}
+
+#panelWrapperV {
+    border-bottom: 1px solid rgba(120,130,140,.13);
+    border-right: 1px solid rgba(120,130,140,.13);
+    border-left: 1px solid rgba(120,130,140,.13);
+}
+
+.panel .panel-body {
+    padding: 0px;
+}
+
+.panel .panel-action > button {
+    color: white;
+}
+
+.panel .panel-heading {
+    padding: 0px;
+    min-height: 30px;
+}
+
+.spanNoOptions {
+    display: flex;
+    justify-content: center;
+}
+
+.table {
+    margin-bottom: 0px;
+}
+
+.table-responsive {
+    width: 100%;
+    margin-bottom: 10px;
+    overflow-y: hidden;
+    border: 1px solid #ddd;
+}
+
+ol, ul {
+    margin-bottom: 0px;
+}
+
+.pagination > .active > a {
+    background-color: #2f323d;
+}
+
+.btn:focus {
+    background: #2f323d;
+    border: 1px solid #2f323d;
+}
+
+.v-select .dropdown-toggle .clear {
+    line-height: 0 !important;
+    margin-top: 3px;
+}
+
+.v-select input[type=search], .v-select input[type=search]:focus {
+    height: 20px;
+}
+
+.width-full {
+    width: 100%;
+}
+
+.label-rouded, .label-rounded {
+    font-size: 10px;
+    padding: 3px 12px 2px;
+}
+
+th {
+    color: white;
+}
+
+thead tr {
+    background-color: #2f323d;
+}
+
+.columnaOpciones {
+    padding-top: 7px !important;
+    padding-bottom: 5px !important;
+}
+
+th, td {
+    text-align: center;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+.contenedorFiltro {
+    background-color: white;
+    padding: 10px;
+}
+
+.modal-content, .modal-header,
+.modal-body, .modal-footer {
+    float: left;
+    width: 100%;
+}
+
+.modal-header {
+    background-color: darkgray;
+}
+
+.modal-title {
+    color: white;
+}
+
+.separadorDetalle {
+    margin-top: 25px;
+}
+
+            */
+/* ---------------------------- */
+
+/* BORDER RADIOS */
+/*
+.radio label::before {
+    border-color: #a1a1a5;
+}
+
+.checkbox label::before {
+    border-color: #a1a1a5;
+}
+    */
