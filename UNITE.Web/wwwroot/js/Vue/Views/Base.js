@@ -1,8 +1,13 @@
 ﻿var Base = {
 
+    Autocomplete: function () {
+
+
+    },
+
     getProductos: async function (value) {
 
-        await axios.get(Functions.obtenerUrlApiUnite('base/listproductosautocomplete'), {
+        return await axios.get(Functions.obtenerUrlApiUnite('base/listproductosautocomplete'), {
             params: {
                 value: value
             },

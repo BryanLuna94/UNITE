@@ -21,12 +21,6 @@
     },
     mounted: async function () {
 
-        this.list.Detalle = {
-
-            Item: '1',
-            Descripcion: '',
-
-        },
         this.$nextTick(() => {
 
         });
@@ -36,12 +30,11 @@
         getProductos: async function (value) {
 
             let _this = this;
-            /*Base.getProductos(value).then((data) => {
-                alert(data);
+
+            await Base.getProductos(value).then(function (data) {
+                _this.list.Productos = data;
             });
-            */
-            alert(await Base.getProductos(value));
-            //_this.list.Productos = await return Base.getProductos(value);
+
         },
 
         validateForm: function () {
