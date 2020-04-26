@@ -43,7 +43,7 @@
         </div>
         <div class="form-group text-center m-t-20">
             <div class="col-xs-12">
-                <button class="btn btn-info btn-lg btn-block btn-rounded text-uppercase waves-effect waves-light" ref="bntSubmit" type="submit">Iniciar sesión</button>
+                <button class="btn btn-info btn-lg btn-block btn-rounded text-uppercase waves-effect waves-light" v-on:click.prevent="ingresar()" ref="bntSubmit" type="submit">Iniciar sesión</button>
             </div>
         </div>
     </form>
@@ -70,6 +70,6 @@
 
     <script type="text/javascript" src="@Url.Content("~/wwwroot/js/Vue/views/Login.js")"></script>
     <script>
-        var rutaIndex = '@Url.Action("Index","Home")';
+        let rutaIndex = '@Url.Action("Index","Home")';
     </script>
 }

@@ -18,7 +18,7 @@ namespace UNITE.WebApi.Controllers
             Response<LoginResponse> response = UsuarioLogic.Login(request);
             if (response.Valor.Usuario != null)
             {
-                var token = TokenGenerator.GenerateTokenJwt(response.Valor.Usuario.IdEmpresa.ToString(), request.Acceso);
+                var token = TokenGenerator.GenerateTokenJwt(response.Valor.Usuario.IdEmpresa.ToString(), request.Acceso, request.MinutosExpiracion);
                 response.Valor.Token = token;
                 return Ok(response);
             }

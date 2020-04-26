@@ -21,6 +21,10 @@
             
         },
 
+        salir: function () {
+            Functions.cerrarSesion();
+        },
+
     },
     computed: {
         FullFields: function () {

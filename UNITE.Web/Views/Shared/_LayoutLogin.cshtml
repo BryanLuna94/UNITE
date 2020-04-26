@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" type="image/png" sizes="16x16" href="~/favicon.ico">
-    <title>ERP JELAF 20 - MANTENIMIENTO DE UNIDADES - @ViewData["Title"]</title>
+    <title>UNITE - @ViewData["Title"]</title>
     <!-- Bootstrap Core CSS -->
     <link href="~/wwwroot/AmpleAdmin/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
     <!-- toast CSS -->
@@ -40,8 +40,8 @@
             <div class="inner-panel">
                 <a href="javascript:void(0)" class="p-20 di"><img src="~/wwwroot/AmpleAdmin/plugins/images/perfil.png"></a>
                 <div class="lg-content">
-                    <h2> ERP JELAF @DateTime.Now.ToString("yyyy")</h2>
-                    <p class="text-muted">SISTEMA DE MANTENIMIENTO DE UNIDADES</p>
+                    <h2> UNITE @DateTime.Now.ToString("yyyy")</h2>
+                    <p class="text-muted">SISTEMA COMERCIAL</p>
                 </div>
             </div>
         </div>
@@ -77,22 +77,6 @@
     <script src="~/wwwroot/js/JqueryDataTables/jquery.dataTables.min.js"></script>
     <!--sweetalert2 -->
     <script src="~/wwwroot/AmpleAdmin/plugins/bower_components/sweetalert/sweetalert2.all.min.js"></script>
-    <!-- Get Base Url -->
-    <script type="text/javascript">
-        var getBaseUrl = {
-            //Obtener url relativa
-            Scheme: '@HttpContext.Current.Request.Url.Scheme' + "://",
-            Host: '@HttpContext.Current.Request.Url.Host' + ':',
-            Port: '@HttpContext.Current.Request.Url.Port',
-            Authority: '@HttpContext.Current.Request.Url.Authority',
-            ApplicationPath: '@HttpContext.Current.Request.ApplicationPath' + '/',
-            //Obtener url absoluta
-            obtenerUrlAbsoluta: function (urlRelativa) {
-                var baseUrl = this.Scheme + this.Host + this.Port + this.ApplicationPath.replace('//', '/') + urlRelativa;
-                return baseUrl;
-            }
-        };
-    </script>
     <!--Vue js -->
     <script src="~/wwwroot/js/Vue/handlebars.min.js"></script>
     <!-- vue js -->

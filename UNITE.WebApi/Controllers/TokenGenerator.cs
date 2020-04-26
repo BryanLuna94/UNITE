@@ -11,13 +11,12 @@ namespace UNITE.WebApi.Controllers
     /// </summary>
     internal static class TokenGenerator
     {
-        public static string GenerateTokenJwt(string idEmpresa,string username)
+        public static string GenerateTokenJwt(string idEmpresa,string username, string ExpiresIn)
         {
             // appsetting for Token JWT
             var secretKey = ConfigurationManager.AppSettings["JWT_SECRET_KEY"];
             var audienceToken = ConfigurationManager.AppSettings["JWT_AUDIENCE_TOKEN"];
             var issuerToken = ConfigurationManager.AppSettings["JWT_ISSUER_TOKEN"];
-            var expireTime = ConfigurationManager.AppSettings["JWT_EXPIRE_MINUTES"];
 
             var securityKey = new SymmetricSecurityKey(System.Text.Encoding.Default.GetBytes(secretKey));
             var signingCredentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256Signature);
@@ -33,7 +32,7 @@ namespace UNITE.WebApi.Controllers
                 issuer: issuerToken,
                 subject: claimsIdentity,
                 notBefore: DateTime.UtcNow,
-                expires: DateTime.UtcNow.AddMinutes(Convert.ToInt32(expireTime)),
+                expires: DateTime.UtcNow.AddMinutes(Convert.ToInt32(ExpiresIn)),
                 signingCredentials: signingCredentials);
 
             var jwtTokenString = tokenHandler.WriteToken(jwtSecurityToken);

@@ -2,7 +2,8 @@
 
     DatosApiUnite: {
 
-        URL_BASE: 'https://localhost:44384/api/'
+        URL_BASE: 'https://localhost:44384/api/',
+        TIME_EXPIRE_TOKEN: '1440'
 
     },
 

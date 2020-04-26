@@ -20,7 +20,8 @@
             if (this.validateForm()) {
                 await axios.post(Functions.obtenerUrlApiUnite('Autenticacion/Login'), {
                     Acceso: this.objUsuario.Acceso,
-                    Clave: this.objUsuario.Clave
+                    Clave: this.objUsuario.Clave,
+                    MinutosExpiracion: Constants.DatosApiUnite.TIME_EXPIRE_TOKEN
                 })
                     .then(async res => {
                         if (res.data.EsCorrecto) {
@@ -32,12 +33,13 @@
                         }
                     })
                     .catch(error => {
-                        Notifications.Messages.error(error.message);
+                        Functions.capturarErrorResponse(error);
                     });
             } else {
                 this.SetFocus();
             }
         },
+
         validateForm: function () {
             return (this.objUsuario.Acceso && this.objUsuario.Clave) ? true : false;
         },

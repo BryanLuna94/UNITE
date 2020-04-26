@@ -143,21 +143,7 @@
     <script src="~/wwwroot/AmpleAdmin/plugins/bower_components/sweetalert/sweetalert2.all.min.js"></script>
     <!-- Get Base Url -->
     <script type="text/javascript">
-        var getBaseUrl = {
-            //Obtener url relativa
-            Scheme: '@HttpContext.Current.Request.Url.Scheme' + "://",
-            Host: '@HttpContext.Current.Request.Url.Host' + ':',
-            Port: '@HttpContext.Current.Request.Url.Port',
-            Authority: '@HttpContext.Current.Request.Url.Authority',
-            ApplicationPath: '@HttpContext.Current.Request.ApplicationPath' + '/',
-            //Obtener url absoluta
-            obtenerUrlAbsoluta: function (urlRelativa) {
-                var baseUrl = this.Scheme + this.Host + this.Port + this.ApplicationPath.replace('//', '/') + urlRelativa;
-                return baseUrl;
-            }
-        };
-
-
+        let rutaLogin = '@Url.Action("Login","Autenticacion")';
     </script>
     <!--Vue js -->
     <script src="~/wwwroot/js/Vue/handlebars.min.js"></script>
@@ -190,9 +176,10 @@
     <script src="~/wwwroot/js/Vue/moment.js"></script>
     <script src="~/wwwroot/js/Vue/moment_2.10.6_locale_es.js"></script>
     <script src="~/wwwroot/js/Utility/Constans.js"></script>
-    <script type="text/javascript" src="@Url.Content("~/wwwroot/js/Vue/views/Base.js")"></script>
     <script src="~/wwwroot/js/Utility/Functions.js"></script>
+    <script type="text/javascript" src="@Url.Content("~/wwwroot/js/Vue/views/Base.js")"></script>
     <script type="text/javascript" src="@Url.Content("~/wwwroot/js/Vue/views/Layout.js")"></script>
+
 
     <!--Morris JavaScript
     <script src="~/wwwroot/AmpleAdmin/plugins/bower_components/raphael/raphael-min.js"></script>

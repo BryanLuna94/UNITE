@@ -15,36 +15,58 @@
 
             <div class="white-box">
                 <div class="table-responsive">
-                    <table class="table table-hover manage-u-table" id="tableMtbf" ref="#tableMtbf">
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>DESCRIPCIÓN</th>
-                                <th>PRECIO</th>
-                                <th>CANTIDAD</th>
-                                <th>SUB TOTAL</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="header" v-for="Detalle in list.Detalle">
-                                <td width="4%" align="center"><input type="text" class="form-control" readonly v-model="Detalle.Item" /></td>
-                                <td width="4%" align="center">
-                                    <v-select v-model="Detalle.Descripcion"
-                                              :options="list.Productos"
-                                              index="Codigo"
-                                              label="Descripcion"
-                                              @@search="getProductos"
-                                              @@keydown.13.native.prevent="$refs.Precio.focus()"
-                                              placeholder="--Seleccione--"
-                                              ref="Producto">
-                                    </v-select>
-                                </td>
-                                <td width="4%" align="center"><input type="text" class="form-control" v-model="Detalle.Precio" ref="Precio" /></td>
-                                <td width="4%" align="center"><input type="text" class="form-control" v-model="Detalle.Cantidad" /></td>
-                                <td width="4%" align="center"><input type="text" class="form-control" readonly v-model="Detalle.SubTotal" /></td>
-                            </tr>
-                        </tbody>
+                    <table width="100%">
+                        <tr>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td class="col-md-11">
+                                            <v-select v-model="objDetalle.IdProducto"
+                                                      :options="list.Productos"
+                                                      index="Codigo"
+                                                      label="Descripcion"
+                                                      @@search="getProductos"
+                                                      @@keydown.13.native.prevent="agregarFila"
+                                                      placeholder="--Seleccione un produto o servicio--"
+                                                      ref="Producto">
+                                            </v-select>
+                                        </td>
+                                        <td class="col-md-1">
+                                            <button type="button" v-on:click.prevent="agregarFila()" class="btn waves-effect waves-light btn-inverse">AGREGAR</button>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table class="table table-hover manage-u-table" id="tableMtbf" ref="#tableMtbf">
+                                    <thead>
+                                        <tr>
+                                            <th class="col-md-1">#</th>
+                                            <th class="col-md-6">DESCRIPCIÓN</th>
+                                            <th class="col-md-2">PRECIO</th>
+                                            <th class="col-md-1">CANTIDAD</th>
+                                            <th class="col-md-2">SUB TOTAL</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="header" v-for="(Detalle, index) in list.Detalle">
+                                            <td align="center"><input type="text" class="form-control text-center" readonly v-model="Detalle.Item" /></td>
+                                            <td align="center"><input type="text" class="form-control text-left" readonly v-model="Detalle.Descripcion" ref="Descripcion" /></td>
+                                            <td align="center"><input type="text" class="form-control text-right" @@keydown.enter="setFocus(2, index)" v-model="Detalle.Precio" ref="Precio" /></td>
+                                            <td align="center"><input type="text" class="form-control text-center" v-model="Detalle.Cantidad" ref="Cantidad" /></td>
+                                            <td align="center">
+                                                <input type="text" class="form-control text-right" readonly v-model="Detalle.SubTotal" ref="SubTotal" />
+                                            <td> <button type="button" v-on:click.prevent="eliminarProducto(index)" title="Eliminar" class="btn btn-danger btn-outline btn-circle btn-sm m-r-5"><i class="ti-trash"></i></button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
                     </table>
+
+
                 </div>
             </div>
         </div>

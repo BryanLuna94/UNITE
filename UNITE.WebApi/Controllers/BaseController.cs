@@ -9,6 +9,7 @@ namespace UNITE.WebApi.Controllers
 {
     [Authorize]
     [RoutePrefix("api/base")]
+    [Atributos.ExcepcionAtributo]
     public class BaseController : ApiController
     {
         #region "Atributos Generales"
@@ -26,7 +27,6 @@ namespace UNITE.WebApi.Controllers
 
         [HttpGet()]
         [Route("listproductosautocomplete")]
-        [Atributos.ExcepcionAtributo]
         public IHttpActionResult ListProductosAutocomplete(string value)
         {
             var idEmpresa = Functions.GetIdEmpresaByToken(Token);

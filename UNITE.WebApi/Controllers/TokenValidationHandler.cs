@@ -69,6 +69,7 @@ namespace UNITE.WebApi.Controllers
             catch (SecurityTokenValidationException)
             {
                 statusCode = HttpStatusCode.Unauthorized;
+                return base.SendAsync(request, cancellationToken);
             }
             catch (Exception)
             {

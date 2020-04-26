@@ -4,5 +4,6 @@
     {
         public string Acceso { get; set; }
         public string Clave { get; set; }
+        public string MinutosExpiracion { get; set; }
     }
 }

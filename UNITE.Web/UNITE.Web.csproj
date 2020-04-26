@@ -128,11 +128,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Helpers\DataSession.cs" />
     <Compile Include="Helpers\HelperFunctions.cs" />
     <Compile Include="Helpers\KindOfNotify.cs" />
     <Compile Include="Helpers\NotifyJson.cs" />
-    <Compile Include="Helpers\SessionExpire.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -669,17 +667,10 @@
     <Content Include="wwwroot\js\Vue\v-mask.min.js" />
     <Content Include="wwwroot\js\Vue\vee-validate.js" />
     <Content Include="wwwroot\js\Vue\vee-validate.min.js" />
-    <Content Include="wwwroot\js\Vue\Views\AuxilioMecanico.js" />
     <Content Include="wwwroot\js\Vue\Views\Base.js" />
-    <Content Include="wwwroot\js\Vue\Views\Fallas.js" />
-    <Content Include="wwwroot\js\Vue\Views\Informe.js" />
     <Content Include="wwwroot\js\Vue\Views\Layout.js" />
     <Content Include="wwwroot\js\Vue\Views\VentaRapida.js" />
     <Content Include="wwwroot\js\Vue\Views\Login.js" />
-    <Content Include="wwwroot\js\Vue\Views\Mtbf.js" />
-    <Content Include="wwwroot\js\Vue\Views\OrdenMasiva.js" />
-    <Content Include="wwwroot\js\Vue\Views\SubSistemas.js" />
-    <Content Include="wwwroot\js\Vue\Views\TipoMP.js" />
     <Content Include="wwwroot\js\Vue\vue-bootstrap-datetimepicker.js" />
     <Content Include="wwwroot\js\Vue\vue-multiselect.min.js" />
     <Content Include="wwwroot\js\Vue\vue-paginate.js" />
@@ -1005,7 +996,6 @@
     <Content Include="wwwroot\AmpleAdmin\plugins\bower_components\sidebar-nav\README.md" />
     <Content Include="Views\Shared\_LayoutFooter.cshtml" />
     <Content Include="Views\Shared\_LayoutHeader.cshtml" />
-    <Content Include="Views\Shared\_LayoutInicio.cshtml" />
     <Content Include="Views\Shared\_LayoutLeftSidebar.cshtml" />
     <Content Include="Views\Shared\_LayoutLogin.cshtml" />
     <Content Include="Views\Shared\_LayoutRightSidebar.cshtml" />
@@ -1019,7 +1009,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\Base\" />
     <Folder Include="Views\Compra\" />
     <Folder Include="Views\Movimiento\" />
   </ItemGroup>
